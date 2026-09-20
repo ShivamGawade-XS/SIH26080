@@ -1,0 +1,447 @@
+[
+  {
+    "subsystem": "S1",
+    "query": "GFS download GRIB subset python",
+    "count": 0,
+    "items": []
+  },
+  {
+    "subsystem": "S1",
+    "query": "ECMWF open data python",
+    "count": 0,
+    "items": []
+  },
+  {
+    "subsystem": "S1",
+    "query": "NOAA GEFS reforecast python",
+    "count": 0,
+    "items": []
+  },
+  {
+    "subsystem": "S1",
+    "query": "herbie gfs",
+    "count": 1,
+    "items": [
+      {
+        "description": "NWP wind field pipeline (Herbie/GFS) + FastAPI texture server for windy-style particle layers",
+        "fullName": "DrakonianMight/wind-tile-service",
+        "stargazersCount": 0,
+        "updatedAt": "2026-07-08T13:02:49Z",
+        "url": "https://github.com/DrakonianMight/wind-tile-service"
+      }
+    ]
+  },
+  {
+    "subsystem": "S2",
+    "query": "IMD gridded rainfall python",
+    "count": 0,
+    "items": []
+  },
+  {
+    "subsystem": "S2",
+    "query": "IMD rainfall",
+    "count": 15,
+    "items": [
+      {
+        "description": "I'm excited to share my latest project where I analyzed 100+ years of Indian Meteorological Department (IMD) rainfall data to uncover trends, patterns, and predictions across various subdivisions of India.",
+        "fullName": "priteeksingh/-Exploring-India-s-Rainfall-Trends-Using-Python-Real-IMD-Data-",
+        "stargazersCount": 6,
+        "updatedAt": "2026-06-25T23:51:48Z",
+        "url": "https://github.com/priteeksingh/-Exploring-India-s-Rainfall-Trends-Using-Python-Real-IMD-Data-"
+      },
+      {
+        "description": "An engine to study parametric insurance approaches on IMD rainfall data.",
+        "fullName": "arnalph/parametric-insurance-engine",
+        "stargazersCount": 2,
+        "updatedAt": "2026-05-07T10:55:19Z",
+        "url": "https://github.com/arnalph/parametric-insurance-engine"
+      },
+      {
+        "description": "IMD data extraction code - open grads",
+        "fullName": "sssmartsearch/IMD_RAINFALL_EXTRACTION_CODE",
+        "stargazersCount": 1,
+        "updatedAt": "2024-01-22T19:14:12Z",
+        "url": "https://github.com/sssmartsearch/IMD_RAINFALL_EXTRACTION_CODE"
+      },
+      {
+        "description": "Introduction to basic IMD rainfall data handling ",
+        "fullName": "gokulrk06/ExplorerDiaries-IMD-Rainfall_data_analysis",
+        "stargazersCount": 1,
+        "updatedAt": "2026-08-09T00:03:59Z",
+        "url": "https://github.com/gokulrk06/ExplorerDiaries-IMD-Rainfall_data_analysis"
+      },
+      {
+        "description": "",
+        "fullName": "shashankb26/IMD_Rainfall",
+        "stargazersCount": 1,
+        "updatedAt": "2022-08-20T03:33:51Z",
+        "url": "https://github.com/shashankb26/IMD_Rainfall"
+      },
+      {
+        "description": "This repository contains the time series generated from IMD Rainfall and Temperature Datasets.",
+        "fullName": "Quickbeasts51429/IMD_ANALYSIS",
+        "stargazersCount": 1,
+        "updatedAt": "2024-06-24T11:46:05Z",
+        "url": "https://github.com/Quickbeasts51429/IMD_ANALYSIS"
+      },
+      {
+        "description": "Crop Yield Prediction using Machine Learning, NASA POWER climate data, and IMD rainfall datasets.",
+        "fullName": "lohithsc/Crop-yield-prediction",
+        "stargazersCount": 1,
+        "updatedAt": "2026-07-16T06:28:44Z",
+        "url": "https://github.com/lohithsc/Crop-yield-prediction"
+      },
+      {
+        "description": "Machine Learning based Sponge City Readiness Index (SCRI) and Rainfall Spatial Downscaling Framework for India using IMD Rainfall Data, Geospatial Analytics, SHAP Explainability, and Interactive Decision Support Dashboard.",
+        "fullName": "BhumikaAggwl/sponge-city-readiness-india",
+        "stargazersCount": 1,
+        "updatedAt": "2026-07-24T15:42:31Z",
+        "url": "https://github.com/BhumikaAggwl/sponge-city-readiness-india"
+      },
+      {
+        "description": "A Big Data\u00e2\u20ac\u201cdriven Flood Risk Prediction System that processes IMD rainfall datasets (NetCDF & CSV), performs rainfall analysis, extreme event detection, and predicts flood risk levels using Linear Regression with a Flask-based dashboard.",
+        "fullName": "parnicadivakar/Flood-risk-prediction-system",
+        "stargazersCount": 1,
+        "updatedAt": "2026-08-29T01:45:01Z",
+        "url": "https://github.com/parnicadivakar/Flood-risk-prediction-system"
+      },
+      {
+        "description": "download and plot imd rainfall data ",
+        "fullName": "der-knight/imd_rainfall",
+        "stargazersCount": 0,
+        "updatedAt": "2021-04-16T09:00:09Z",
+        "url": "https://github.com/der-knight/imd_rainfall"
+      },
+      {
+        "description": "",
+        "fullName": "sanjoymandal2392/IMD_RAINFALL",
+        "stargazersCount": 0,
+        "updatedAt": "2026-07-27T16:34:51Z",
+        "url": "https://github.com/sanjoymandal2392/IMD_RAINFALL"
+      },
+      {
+        "description": "rainfall",
+        "fullName": "LekshmiK2003/IMD_rainfall",
+        "stargazersCount": 0,
+        "updatedAt": "2024-10-30T17:10:28Z",
+        "url": "https://github.com/LekshmiK2003/IMD_rainfall"
+      },
+      {
+        "description": "",
+        "fullName": "anil002/IMD_rainfall",
+        "stargazersCount": 0,
+        "updatedAt": "2025-04-17T20:11:22Z",
+        "url": "https://github.com/anil002/IMD_rainfall"
+      },
+      {
+        "description": "",
+        "fullName": "kmmrao/IMD_Rainfall_JJAS",
+        "stargazersCount": 0,
+        "updatedAt": "2022-08-03T06:07:04Z",
+        "url": "https://github.com/kmmrao/IMD_Rainfall_JJAS"
+      },
+      {
+        "description": "Static dashboard for IMD 0.25 degree daily gridded rainfall, 1901-2025.",
+        "fullName": "kieranmrhunt/imd-rainfall-dashboard",
+        "stargazersCount": 0,
+        "updatedAt": "2026-08-26T15:54:56Z",
+        "url": "https://github.com/kieranmrhunt/imd-rainfall-dashboard"
+      }
+    ]
+  },
+  {
+    "subsystem": "S2",
+    "query": "IMERG GPM download python",
+    "count": 0,
+    "items": []
+  },
+  {
+    "subsystem": "S2",
+    "query": "CHIRPS rainfall python",
+    "count": 0,
+    "items": []
+  },
+  {
+    "subsystem": "S3",
+    "query": "ERA5 download xarray",
+    "count": 0,
+    "items": []
+  },
+  {
+    "subsystem": "S3",
+    "query": "ARCO ERA5 zarr",
+    "count": 1,
+    "items": [
+      {
+        "description": "Evidence harness: ARCO-ERA5 (Zarr) direct read for RAiDER + ERA5 model-level corruption diagnosis",
+        "fullName": "s-sasaki-earthsea-wizard/raider-arco-era5",
+        "stargazersCount": 0,
+        "updatedAt": "2026-08-23T04:11:18Z",
+        "url": "https://github.com/s-sasaki-earthsea-wizard/raider-arco-era5"
+      }
+    ]
+  },
+  {
+    "subsystem": "S3",
+    "query": "weatherbench xarray",
+    "count": 0,
+    "items": []
+  },
+  {
+    "subsystem": "S4",
+    "query": "quantile mapping precipitation python",
+    "count": 0,
+    "items": []
+  },
+  {
+    "subsystem": "S4",
+    "query": "bias adjustment forecast python",
+    "count": 0,
+    "items": []
+  },
+  {
+    "subsystem": "S4",
+    "query": "quantile delta mapping python",
+    "count": 0,
+    "items": []
+  },
+  {
+    "subsystem": "S4",
+    "query": "ibicus bias correction",
+    "count": 0,
+    "items": []
+  },
+  {
+    "subsystem": "S5",
+    "query": "statistical postprocessing NWP machine learning",
+    "count": 0,
+    "items": []
+  },
+  {
+    "subsystem": "S5",
+    "query": "precipitation postprocessing gradient boosting",
+    "count": 0,
+    "items": []
+  },
+  {
+    "subsystem": "S5",
+    "query": "EMOS weather postprocessing python",
+    "count": 0,
+    "items": []
+  },
+  {
+    "subsystem": "S5",
+    "query": "EUPP-benchmark",
+    "count": 3,
+    "items": [
+      {
+        "description": "A case serving as prove-of-concept for the EUPP hacky benchmark dataset.",
+        "fullName": "meteosimon/eupp-case",
+        "stargazersCount": 4,
+        "updatedAt": "2023-01-13T13:16:04Z",
+        "url": "https://github.com/meteosimon/eupp-case"
+      },
+      {
+        "description": "Benchmark dataset for station based post-processing of temperature forecasts",
+        "fullName": "m-j-w-f/EUPPStationsBenchmark",
+        "stargazersCount": 0,
+        "updatedAt": "2024-08-19T12:25:13Z",
+        "url": "https://github.com/m-j-w-f/EUPPStationsBenchmark"
+      },
+      {
+        "description": "",
+        "fullName": "EUPP-benchmark/EUPP-benchmark.github.io",
+        "stargazersCount": 0,
+        "updatedAt": "2026-01-27T09:44:08Z",
+        "url": "https://github.com/EUPP-benchmark/EUPP-benchmark.github.io"
+      }
+    ]
+  },
+  {
+    "subsystem": "S6",
+    "query": "active break monsoon python",
+    "count": 0,
+    "items": []
+  },
+  {
+    "subsystem": "S6",
+    "query": "monsoon depression tracking python",
+    "count": 0,
+    "items": []
+  },
+  {
+    "subsystem": "S6",
+    "query": "weather regime clustering python",
+    "count": 0,
+    "items": []
+  },
+  {
+    "subsystem": "S6",
+    "query": "relative vorticity 850 hPa python",
+    "count": 0,
+    "items": []
+  },
+  {
+    "subsystem": "S6",
+    "query": "windspharm",
+    "count": 5,
+    "items": [
+      {
+        "description": "A Python library for spherical harmonic computations on vector winds.",
+        "fullName": "ajdawson/windspharm",
+        "stargazersCount": 100,
+        "updatedAt": "2026-09-01T04:22:43Z",
+        "url": "https://github.com/ajdawson/windspharm"
+      },
+      {
+        "description": "(DEPRECATED) xarray-based wrapper around pyspharm & windspharm for spherical harmonics climate/meteorological data analysis",
+        "fullName": "spencerahill/animal-spharm",
+        "stargazersCount": 4,
+        "updatedAt": "2024-11-05T09:48:11Z",
+        "url": "https://github.com/spencerahill/animal-spharm"
+      },
+      {
+        "description": "A hacky demonstration of computation inverse Laplacian using windspharm and friends",
+        "fullName": "ajdawson/gilap_example",
+        "stargazersCount": 2,
+        "updatedAt": "2024-04-08T10:11:13Z",
+        "url": "https://github.com/ajdawson/gilap_example"
+      },
+      {
+        "description": "Perform a Helmholtz decomposition in velocity fields using the windspharm package",
+        "fullName": "LOS-IOUSP/Helmholtz-decomposition",
+        "stargazersCount": 2,
+        "updatedAt": "2024-03-29T03:19:35Z",
+        "url": "https://github.com/LOS-IOUSP/Helmholtz-decomposition"
+      },
+      {
+        "description": "A conda-smithy repository for windspharm.",
+        "fullName": "conda-forge/windspharm-feedstock",
+        "stargazersCount": 0,
+        "updatedAt": "2026-04-24T14:46:07Z",
+        "url": "https://github.com/conda-forge/windspharm-feedstock"
+      }
+    ]
+  },
+  {
+    "subsystem": "S6",
+    "query": "tempestextremes",
+    "count": 12,
+    "items": [
+      {
+        "description": "Extreme weather detection and characterization",
+        "fullName": "ClimateGlobalChange/tempestextremes",
+        "stargazersCount": 147,
+        "updatedAt": "2026-09-03T09:27:28Z",
+        "url": "https://github.com/ClimateGlobalChange/tempestextremes"
+      },
+      {
+        "description": "A tenten project Rose app to run TempestExtremes inline with a climate model.",
+        "fullName": "MetOffice/inline_model_metrics",
+        "stargazersCount": 2,
+        "updatedAt": "2025-05-20T09:21:53Z",
+        "url": "https://github.com/MetOffice/inline_model_metrics"
+      },
+      {
+        "description": "A Python module for the easier manipulation of TempestExtremes data",
+        "fullName": "MetOffice/tempest_helper",
+        "stargazersCount": 1,
+        "updatedAt": "2026-07-14T08:48:34Z",
+        "url": "https://github.com/MetOffice/tempest_helper"
+      },
+      {
+        "description": "tracking datasets with TempestExtremes (TE) ",
+        "fullName": "gabelach-meteo/TEtracking",
+        "stargazersCount": 0,
+        "updatedAt": "2025-10-02T17:32:10Z",
+        "url": "https://github.com/gabelach-meteo/TEtracking"
+      },
+      {
+        "description": "Tracking of TCs based on the TempestExtremes library",
+        "fullName": "paologhinassi/TC-tracking",
+        "stargazersCount": 0,
+        "updatedAt": "2022-11-18T12:06:49Z",
+        "url": "https://github.com/paologhinassi/TC-tracking"
+      },
+      {
+        "description": "Cumulus_Copy_Extremes",
+        "fullName": "ppothapa/tempestextremes",
+        "stargazersCount": 0,
+        "updatedAt": "2025-10-08T03:44:38Z",
+        "url": "https://github.com/ppothapa/tempestextremes"
+      },
+      {
+        "description": "TempestExtremes: Indicators of change in the characteristics of extreme weather",
+        "fullName": "bssrdf/Grant-2015-NASAClimateIndicators",
+        "stargazersCount": 0,
+        "updatedAt": "2019-11-19T21:58:05Z",
+        "url": "https://github.com/bssrdf/Grant-2015-NASAClimateIndicators"
+      },
+      {
+        "description": "Used this to run TempestExtremes algorithm for the RGMA project ",
+        "fullName": "Qwecitq/RGMA-Tempest-Runs-2025",
+        "stargazersCount": 0,
+        "updatedAt": "2025-06-11T16:36:22Z",
+        "url": "https://github.com/Qwecitq/RGMA-Tempest-Runs-2025"
+      },
+      {
+        "description": "TempestExtremes scripts and configuration for ETCs in CMIP/CMOR-ized datasets.",
+        "fullName": "zarzycki/cmip-etcs",
+        "stargazersCount": 0,
+        "updatedAt": "2026-08-27T15:01:53Z",
+        "url": "https://github.com/zarzycki/cmip-etcs"
+      },
+      {
+        "description": "",
+        "fullName": "seunghbaek/TempestExtremes",
+        "stargazersCount": 0,
+        "updatedAt": "2025-05-01T20:55:49Z",
+        "url": "https://github.com/seunghbaek/TempestExtremes"
+      },
+      {
+        "description": "Pyclogenesis is a simple package that is designed to facilitate the analysis of TC track data processed through objective trackers like TempestExtremes and TRACK.",
+        "fullName": "ajbolivar/Pyclogenesis",
+        "stargazersCount": 0,
+        "updatedAt": "2025-04-18T20:57:21Z",
+        "url": "https://github.com/ajbolivar/Pyclogenesis"
+      },
+      {
+        "description": "Vortex removal algorithm based on methodology described by Davis et al. (2008). The original MATLAB scripts are credited to Chris Yu, Nick Barron, and Jake Carstens. This version has generalized the code to allow for vortex removal for large datasets given vortex information from objective trackers like TempestExtremes and added smoothing.",
+        "fullName": "ajbolivar/vortex_surgery",
+        "stargazersCount": 0,
+        "updatedAt": "2024-09-06T17:35:08Z",
+        "url": "https://github.com/ajbolivar/vortex_surgery"
+      }
+    ]
+  },
+  {
+    "subsystem": "S7",
+    "query": "contingency table CSI ETS python",
+    "count": 0,
+    "items": []
+  },
+  {
+    "subsystem": "S7",
+    "query": "fractions skill score python",
+    "count": 0,
+    "items": []
+  },
+  {
+    "subsystem": "S7",
+    "query": "forecast verification xarray",
+    "count": 0,
+    "items": []
+  },
+  {
+    "subsystem": "S7",
+    "query": "Brier score reliability diagram python",
+    "count": 0,
+    "items": []
+  },
+  {
+    "subsystem": "S7",
+    "query": "nci scores verification",
+    "count": 0,
+    "items": []
+  }
+]

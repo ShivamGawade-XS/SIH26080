@@ -1,0 +1,115 @@
+{
+  "verif weather verification": [
+    {
+      "error": "Command '['gh', 'search', 'repos', 'verif weather verification', '--limit', '5', '--json', 'fullName,description,stargazersCount,updatedAt,url']' returned non-zero exit status 1."
+    }
+  ],
+  "forecast verification python": [
+    {
+      "error": "Command '['gh', 'search', 'repos', 'forecast verification python', '--limit', '5', '--json', 'fullName,description,stargazersCount,updatedAt,url']' returned non-zero exit status 1."
+    }
+  ],
+  "FSS fractions skill score": [
+    {
+      "error": "Command '['gh', 'search', 'repos', 'FSS fractions skill score', '--limit', '5', '--json', 'fullName,description,stargazersCount,updatedAt,url']' returned non-zero exit status 1."
+    }
+  ],
+  "netcal calibration": [
+    {
+      "error": "Command '['gh', 'search', 'repos', 'netcal calibration', '--limit', '5', '--json', 'fullName,description,stargazersCount,updatedAt,url']' returned non-zero exit status 1."
+    }
+  ],
+  "climetlab postprocessing": [
+    {
+      "error": "Command '['gh', 'search', 'repos', 'climetlab postprocessing', '--limit', '5', '--json', 'fullName,description,stargazersCount,updatedAt,url']' returned non-zero exit status 1."
+    }
+  ],
+  "monsoon rainfall bias correction": [
+    {
+      "error": "Command '['gh', 'search', 'repos', 'monsoon rainfall bias correction', '--limit', '5', '--json', 'fullName,description,stargazersCount,updatedAt,url']' returned non-zero exit status 1."
+    }
+  ],
+  "imd rainfall python": [
+    {
+      "error": "Command '['gh', 'search', 'repos', 'imd rainfall python', '--limit', '5', '--json', 'fullName,description,stargazersCount,updatedAt,url']' returned non-zero exit status 1."
+    }
+  ],
+  "ecmwf ai-models": [
+    {
+      "error": "Command '['gh', 'search', 'repos', 'ecmwf ai-models', '--limit', '5', '--json', 'fullName,description,stargazersCount,updatedAt,url']' returned non-zero exit status 1."
+    }
+  ],
+  "rasp lerch postprocessing": [
+    {
+      "error": "Command '['gh', 'search', 'repos', 'rasp lerch postprocessing', '--limit', '5', '--json', 'fullName,description,stargazersCount,updatedAt,url']' returned non-zero exit status 1."
+    }
+  ],
+  "quantile mapping xclim": [
+    {
+      "error": "Command '['gh', 'search', 'repos', 'quantile mapping xclim', '--limit', '5', '--json', 'fullName,description,stargazersCount,updatedAt,url']' returned non-zero exit status 1."
+    }
+  ],
+  "weather regime python": [
+    {
+      "error": "Command '['gh', 'search', 'repos', 'weather regime python', '--limit', '5', '--json', 'fullName,description,stargazersCount,updatedAt,url']' returned non-zero exit status 1."
+    }
+  ],
+  "india geojson datameet": [
+    {
+      "error": "Command '['gh', 'search', 'repos', 'india geojson datameet', '--limit', '5', '--json', 'fullName,description,stargazersCount,updatedAt,url']' returned non-zero exit status 1."
+    }
+  ],
+  "geoboundaries india": [
+    {
+      "error": "Command '['gh', 'search', 'repos', 'geoboundaries india', '--limit', '5', '--json', 'fullName,description,stargazersCount,updatedAt,url']' returned non-zero exit status 1."
+    }
+  ],
+  "maplibre-gl js": [
+    {
+      "error": "Command '['gh', 'search', 'repos', 'maplibre-gl js', '--limit', '5', '--json', 'fullName,description,stargazersCount,updatedAt,url']' returned non-zero exit status 1."
+    }
+  ],
+  "exactextract": [
+    {
+      "error": "Command '['gh', 'search', 'repos', 'exactextract', '--limit', '5', '--json', 'fullName,description,stargazersCount,updatedAt,url']' returned non-zero exit status 1."
+    }
+  ],
+  "xagg": [
+    {
+      "description": "Aggregating gridded data (xarray) to polygons",
+      "fullName": "ks905383/xagg",
+      "stargazersCount": 102,
+      "updatedAt": "2026-06-12T14:00:09Z",
+      "url": "https://github.com/ks905383/xagg"
+    },
+    {
+      "description": "Aggregating gridded data (xarray) to polygons",
+      "fullName": "ks905383/xagg_archived",
+      "stargazersCount": 34,
+      "updatedAt": "2026-02-04T19:06:45Z",
+      "url": "https://github.com/ks905383/xagg_archived"
+    },
+    {
+      "description": "A conda-smithy repository for xagg.",
+      "fullName": "conda-forge/xagg-feedstock",
+      "stargazersCount": 1,
+      "updatedAt": "2026-04-24T14:50:29Z",
+      "url": "https://github.com/conda-forge/xagg-feedstock"
+    },
+    {
+      "description": "A grab bag of new aggregation types for WeeWX",
+      "fullName": "tkeffer/weewx-xaggs",
+      "stargazersCount": 6,
+      "updatedAt": "2026-03-29T12:33:30Z",
+      "url": "https://github.com/tkeffer/weewx-xaggs"
+    },
+    {
+      "description": "Attempting faster combiner exchanger and aggregator.",
+      "fullName": "ConcurrentDistributedLab/combXAgg",
+      "stargazersCount": 0,
+      "updatedAt": "2026-01-23T21:34:44Z",
+      "url": "https://github.com/ConcurrentDistributedLab/combXAgg"
+    }
+  ],
+  "scores xarray": []
+}
