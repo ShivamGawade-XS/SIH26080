@@ -1,0 +1,72 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "varsha"
+version = "0.1.0"
+description = "Regime-Aware AI Post-Processing of Monsoon Rainfall Forecasts"
+readme = "README.md"
+authors = [{ name = "Varsha Engineering & Science Team" }]
+license = { text = "MIT" }
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26.0",
+    "scipy>=1.12.0",
+    "pandas>=2.2.0",
+    "xarray>=2024.1.0",
+    "scikit-learn>=1.4.0",
+    "lightgbm>=4.3.0",
+    "fastapi>=0.110.0",
+    "uvicorn>=0.28.0",
+    "pydantic>=2.6.0",
+    "pydantic-settings>=2.2.0",
+    "pyyaml>=6.0.1",
+    "typer>=0.9.0",
+    "rich>=13.7.0",
+    "jinja2>=3.1.3",
+    "matplotlib>=3.8.0",
+    "shapely>=2.0.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.1.0",
+    "hypothesis>=6.98.0",
+    "ruff>=0.3.0",
+    "mypy>=1.9.0",
+    "httpx>=0.27.0",
+]
+real = [
+    "herbie-data>=2024.1.0",
+    "imdlib>=0.1.5",
+    "cdsapi>=0.6.1",
+    "geopandas>=0.14.0",
+]
+
+[project.scripts]
+varsha = "varsha.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "C4", "UP"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.12"
+ignore_missing_imports = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+pythonpath = ["src"]
+addopts = "-v --tb=short"
