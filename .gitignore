@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing & Quality
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Node & Frontend
+node_modules/
+web/node_modules/
+web/dist/
+web/.vite/
+playwright-report/
+test-results/
+
+# Data & Output Bundles (Products)
+data/raw/*
+!data/raw/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+products/*
+!products/.gitkeep
+
+# Secrets & Environment
+.env
+*.pem
+*.key
+.cdsapirc
+
+# IDEs
+.vscode/
+.idea/
+*.swp
