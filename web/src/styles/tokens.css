@@ -1,0 +1,70 @@
+:root {
+  /* Warm Paper Light Mode (Default) */
+  --bg-ground: #F4F2ED;
+  --bg-surface: #FBFAF7;
+  --bg-surface-elevated: #FFFFFF;
+  --text-ink: #16191D;
+  --text-ink-2: #555B63;
+  --text-ink-muted: #7A818B;
+  --border-hairline: #D8D4CA;
+  --border-subtle: #E8E5DD;
+  --accent-interactive: #0F5C6E;
+  --accent-interactive-hover: #0A4553;
+  --accent-focus: rgba(15, 92, 110, 0.35);
+
+  /* Alert Colors */
+  --alert-green: #2E7D32;
+  --alert-yellow: #9A6A00;
+  --alert-orange: #C75100;
+  --alert-red: #B71C1C;
+
+  /* Rain Scale Colors */
+  --rain-dry: #EBE8E0;
+  --rain-light: #B5D3CE;
+  --rain-moderate: #6CA2B3;
+  --rain-rather-heavy: #367794;
+  --rain-heavy: #1B4B74;
+  --rain-very-heavy: #102652;
+  --rain-extreme: #380C3D;
+
+  /* Typography */
+  --font-sans: 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Newsreader', Georgia, serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Radius & Spacing (Crisp 0-3px) */
+  --radius-sm: 2px;
+  --radius-md: 3px;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 24px;
+}
+
+[data-theme='dark'] {
+  --bg-ground: #0F1418;
+  --bg-surface: #151B21;
+  --bg-surface-elevated: #1C232B;
+  --text-ink: #E6E3DA;
+  --text-ink-2: #A5ABB2;
+  --text-ink-muted: #717882;
+  --border-hairline: #2A323A;
+  --border-subtle: #1F262E;
+  --accent-interactive: #5FB3C4;
+  --accent-interactive-hover: #7EC5D4;
+  --accent-focus: rgba(95, 179, 196, 0.4);
+
+  --alert-green: #4CAF50;
+  --alert-yellow: #FBC02D;
+  --alert-orange: #FF9800;
+  --alert-red: #EF5350;
+
+  --rain-dry: #182026;
+  --rain-light: #2D4C49;
+  --rain-moderate: #234B5C;
+  --rain-rather-heavy: #1C4869;
+  --rain-heavy: #215A8E;
+  --rain-very-heavy: #354F91;
+  --rain-extreme: #6E1A7A;
+}

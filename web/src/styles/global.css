@@ -1,0 +1,107 @@
+@import './tokens.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-ground);
+  color: var(--text-ink);
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+}
+
+/* Enforce tabular numerals across all data tables and metrics */
+.tabular-nums, table, td, th, .metric-value, .stat, .mono {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum';
+}
+
+a {
+  color: var(--accent-interactive);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: 1px solid var(--border-hairline);
+  background: var(--bg-surface);
+  color: var(--text-ink);
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  transition: background-color 120ms ease-out, border-color 120ms ease-out;
+}
+
+button:hover {
+  background: var(--bg-surface-elevated);
+  border-color: var(--accent-interactive);
+}
+
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--accent-interactive);
+  outline-offset: 1px;
+}
+
+input, select {
+  font-family: inherit;
+  font-size: 13px;
+  background: var(--bg-surface);
+  color: var(--text-ink);
+  border: 1px solid var(--border-hairline);
+  padding: 5px 8px;
+  border-radius: var(--radius-sm);
+}
+
+/* Hairline rule separators */
+hr {
+  border: 0;
+  border-top: 1px solid var(--border-hairline);
+  margin: 16px 0;
+}
+
+/* Provenance chip */
+.provenance-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: var(--radius-sm);
+  background: #1B4B74;
+  color: #FFFFFF;
+  white-space: nowrap;
+}
+
+.provenance-chip.real {
+  background: #2E7D32;
+}
+
+/* Alert Badges */
+.alert-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  border: 1px solid currentColor;
+}
+
+.alert-red { color: var(--alert-red); }
+.alert-orange { color: var(--alert-orange); }
+.alert-yellow { color: var(--alert-yellow); }
+.alert-green { color: var(--alert-green); }
