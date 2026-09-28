@@ -1,0 +1,10 @@
+# Profile: demo (Default make demo execution)
+profile_name: "demo"
+grid_resolution: 0.5 # 0.5 degree grid
+train_seasons: ["S01", "S02", "S03", "S04", "S05", "S06"]
+cal_seasons: ["S07"]
+test_seasons: ["S08"]
+pseudo_prospective_seasons: ["S09"]
+bootstrap_resamples: 200
+regime_dependent_bias: true
+seed: 42

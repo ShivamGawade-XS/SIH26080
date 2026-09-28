@@ -1,0 +1,10 @@
+# Profile: demo-fast (CI and Rapid Unit/Integration Verification)
+profile_name: "demo-fast"
+grid_resolution: 1.0 # coarse grid for sub-2min CI execution
+train_seasons: ["S01", "S02", "S03", "S04"]
+cal_seasons: ["S05"]
+test_seasons: ["S06"]
+pseudo_prospective_seasons: ["S07"]
+bootstrap_resamples: 50
+regime_dependent_bias: true
+seed: 42

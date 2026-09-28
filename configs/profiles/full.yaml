@@ -1,0 +1,10 @@
+# Profile: full (High-resolution 0.25 degree real or synthetic dataset)
+profile_name: "full"
+grid_resolution: 0.25 # 0.25 degree resolution
+train_seasons: ["S01", "S02", "S03", "S04", "S05", "S06", "S07", "S08"]
+cal_seasons: ["S09"]
+test_seasons: ["S10"]
+pseudo_prospective_seasons: ["S11"]
+bootstrap_resamples: 1000
+regime_dependent_bias: true
+seed: 42

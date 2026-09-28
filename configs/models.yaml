@@ -1,0 +1,49 @@
+# Model Ladder and Heavy Rain Configurations (D2, D3)
+
+ladder:
+  b0:
+    name: "Raw NWP Forecast"
+    type: "identity"
+  
+  b1:
+    name: "Global Quantile Mapping"
+    type: "empirical_qm"
+    n_quantiles: 100
+    
+  b2:
+    name: "Global Gradient Boosted Model (No Regime)"
+    type: "lightgbm_regression"
+    params:
+      learning_rate: 0.05
+      n_estimators: 150
+      num_leaves: 31
+      random_state: 42
+      
+  b3:
+    name: "Regime-Wise Quantile Mapping"
+    type: "regime_qm"
+    n_quantiles: 100
+    
+  b4:
+    name: "Regime-Aware Hurdle Gradient Boosting"
+    type: "hurdle_lightgbm"
+    occurrence_params:
+      learning_rate: 0.05
+      n_estimators: 150
+      num_leaves: 31
+      random_state: 42
+    amount_params:
+      learning_rate: 0.05
+      n_estimators: 150
+      num_leaves: 31
+      random_state: 42
+      quantiles: [0.10, 0.50, 0.90]
+
+heavy_rain:
+  thresholds:
+    heavy: 64.5 # mm/day (IMD Heavy Rain breakpoint)
+    very_heavy: 115.6 # mm/day (IMD Very Heavy Rain breakpoint)
+    extremely_heavy: 204.5 # mm/day (IMD Extremely Heavy Rain breakpoint)
+  calibration:
+    method: "isotonic" # Fallback to Platt scaling if samples < 50
+    min_positive_samples: 30

@@ -1,0 +1,43 @@
+# District Indicative Alert Configuration (D4)
+# Note: All alert levels are strictly labeled "Indicative; not an official IMD warning"
+
+alert_levels:
+  red:
+    label: "Warning"
+    action: "Take Action"
+    glyph: "diamond"
+    color_light: "#B71C1C"
+    color_dark: "#EF5350"
+    conditions:
+      - rule: "max_cell_prob_115 >= 0.40"
+      - rule: "expected_area_fraction_64 >= 0.50"
+      - rule: "max_cell_prob_64 >= 0.75"
+
+  orange:
+    label: "Alert"
+    action: "Be Prepared"
+    glyph: "triangle"
+    color_light: "#C75100"
+    color_dark: "#FF9800"
+    conditions:
+      - rule: "max_cell_prob_64 >= 0.45"
+      - rule: "expected_area_fraction_64 >= 0.25"
+      - rule: "max_cell_prob_115 >= 0.20"
+
+  yellow:
+    label: "Watch"
+    action: "Be Updated"
+    glyph: "square"
+    color_light: "#9A6A00"
+    color_dark: "#FBC02D"
+    conditions:
+      - rule: "max_cell_prob_64 >= 0.20"
+      - rule: "expected_area_fraction_15 >= 0.40"
+
+  green:
+    label: "No Warning"
+    action: "Normal Conditions"
+    glyph: "circle"
+    color_light: "#2E7D32"
+    color_dark: "#4CAF50"
+    default: true

@@ -1,0 +1,35 @@
+# Data Configuration for Project Varsha
+
+domain:
+  name: "india_monsoon"
+  lat_min: 6.0
+  lat_max: 38.0
+  lon_min: 68.0
+  lon_max: 98.0
+
+accumulation_window:
+  start_utc: "03:00" # (verify: IMD standard accumulation window is 03 UTC to 03 UTC / 08:30 IST)
+  end_utc: "03:00"
+  units: "mm/day"
+
+leads:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+
+core_monsoon_zone:
+  lat_min: 18.0
+  lat_max: 28.0
+  lon_min: 73.0
+  lon_max: 86.0
+
+connectors:
+  gfs:
+    provider: "noaa_aws"
+    bucket: "noaa-gfs-bdp-pds"
+    grid_res: 0.25
+  imd:
+    format: "gridded_binary"
+    grid_res: 0.25

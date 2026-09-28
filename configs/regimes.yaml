@@ -1,0 +1,46 @@
+# Weather Regime Definitions & Thresholds (D1)
+# Governing Rule: Every threshold cited and marked (verify)
+
+synoptic_regimes:
+  active:
+    description: "Active Monsoon spell over Core Monsoon Zone"
+    cmz_anomaly_threshold: 0.7 # Standardized precipitation anomaly >= +0.7 sigma (verify)
+    min_spell_days: 3 # Minimum spell persistence in days (verify)
+    u850_jet_min: 15.0 # Low-level westerly jet speed in m/s (verify)
+    
+  break:
+    description: "Break Monsoon spell with dry central India"
+    cmz_anomaly_threshold: -0.7 # Standardized precipitation anomaly <= -0.7 sigma (verify)
+    min_spell_days: 3 # Minimum spell persistence in days (verify)
+    trough_latitude_min: 28.0 # Trough shift to foothills of Himalayas (verify)
+    
+  depression:
+    description: "Monsoon Low / Depression with closed cyclonic vortex"
+    vorticity_850_min: 3.0e-5 # Relative vorticity at 850 hPa in s^-1 (verify)
+    mslp_depression_min: 2.0 # Minimum central pressure depression in hPa (verify)
+    min_duration_days: 2 # Minimum persistence in days (verify)
+    
+  normal:
+    description: "Normal / Transition monsoon background state"
+
+geographic_zones:
+  orographic_ghats:
+    min_elevation_m: 400.0 # Elevation threshold for Western Ghats (verify)
+    min_onshore_flow_u850: 5.0 # Required westerly flow in m/s (verify)
+    lon_max: 76.0
+    lat_min: 8.0
+    lat_max: 21.0
+
+  coastal_west:
+    max_dist_coast_km: 50.0 # Maritime buffer zone (verify)
+    lon_max: 75.0
+    lat_min: 8.0
+    lat_max: 23.0
+
+  orographic_ne:
+    min_elevation_m: 300.0
+    lon_min: 88.0
+    lat_min: 22.0
+
+  interior:
+    description: "Continental interior zone"

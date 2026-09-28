@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varsha Verification Report - {{ run_id }}</title>
+    <style>
+        :root {
+            --ground: #F4F2ED;
+            --surface: #FBFAF7;
+            --ink: #16191D;
+            --ink-2: #555B63;
+            --hairline: #D8D4CA;
+            --accent: #0F5C6E;
+            --pass-green: #2E6F40;
+            --font-family: 'Public Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--ground);
+            color: var(--ink);
+            line-height: 1.5;
+            margin: 0;
+            padding: 40px;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .container {
+            max-width: 1080px;
+            margin: 0 auto;
+            background: var(--surface);
+            border: 1px solid var(--hairline);
+            padding: 48px;
+        }
+
+        .header {
+            border-bottom: 2px solid var(--ink);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
+        .provenance-chip {
+            display: inline-block;
+            background: #1B4B74;
+            color: #FFFFFF;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 2px;
+            margin-bottom: 12px;
+        }
+
+        .provenance-chip.synthetic {
+            background: #8A4F1D;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 8px 0;
+            color: var(--ink);
+            letter-spacing: -0.02em;
+        }
+
+        .meta-strip {
+            font-size: 13px;
+            color: var(--ink-2);
+            display: flex;
+            gap: 24px;
+            margin-top: 12px;
+        }
+
+        .meta-item strong {
+            color: var(--ink);
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 700;
+            border-bottom: 1px solid var(--hairline);
+            padding-bottom: 8px;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        p {
+            font-size: 14px;
+            color: var(--ink);
+            margin-bottom: 16px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin-top: 16px;
+            margin-bottom: 24px;
+        }
+
+        th, td {
+            border: 1px solid var(--hairline);
+            padding: 10px 12px;
+            text-align: left;
+        }
+
+        th {
+            background: #EFECE6;
+            font-weight: 600;
+            color: var(--ink);
+        }
+
+        tr:nth-child(even) {
+            background: #F9F8F5;
+        }
+
+        .num {
+            text-align: right;
+            font-family: inherit;
+        }
+
+        .highlight-b4 {
+            font-weight: 700;
+            background: #EAF4F4 !important;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            font-size: 11px;
+            font-weight: 700;
+            border-radius: 2px;
+        }
+
+        .status-pass {
+            background: #D4EDDA;
+            color: #155724;
+            border: 1px solid #C3E6CB;
+        }
+
+        .status-fail {
+            background: #F8D7DA;
+            color: #721C24;
+            border: 1px solid #F5C6CB;
+        }
+
+        .chart-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-top: 24px;
+        }
+
+        .chart-box {
+            background: #FFFFFF;
+            border: 1px solid var(--hairline);
+            padding: 16px;
+        }
+
+        .chart-box h3 {
+            font-size: 13px;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 12px;
+            color: var(--ink-2);
+        }
+
+        .honesty-box {
+            background: #FDF9F0;
+            border-left: 4px solid #D4A340;
+            padding: 16px;
+            margin-top: 32px;
+            font-size: 13px;
+        }
+
+        @media print {
+            body {
+                background: #FFFFFF;
+                padding: 0;
+            }
+            .container {
+                border: none;
+                padding: 0;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="provenance-chip {% if data_mode == 'synthetic' %}synthetic{% endif %}">
+                {{ data_mode | upper }} VERIFICATION REPORT
+            </span>
+            <h1>Project Varsha: Scientific Verification Report</h1>
+            <div class="meta-strip">
+                <div class="meta-item">Run ID: <strong>{{ run_id }}</strong></div>
+                <div class="meta-item">Profile: <strong>{{ profile }}</strong></div>
+                <div class="meta-item">Domain: <strong>Indian Monsoon (JJAS)</strong></div>
+                <div class="meta-item">Evaluation Days: <strong>{{ n_days }}</strong></div>
+            </div>
+        </div>
+
+        <h2>1. Model Ladder Verification (B0 to B4)</h2>
+        <p>Comparison of post-processing rungs evaluated on independent test seasons. Paired differences and 95% Confidence Intervals are computed via week-block bootstrap.</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Model Rung</th>
+                    <th>Description</th>
+                    <th class="num">RMSE (mm)</th>
+                    <th class="num">MAE (mm)</th>
+                    <th class="num">Bias (mm)</th>
+                    <th class="num">Corr</th>
+                    <th class="num">ETS (&ge;64.5mm)</th>
+                    <th class="num">CSI (&ge;64.5mm)</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for rung in model_ladder %}
+                <tr class="{% if rung.rung == 'B4' %}highlight-b4{% endif %}">
+                    <td><strong>{{ rung.rung }}</strong></td>
+                    <td>{{ rung.name }}</td>
+                    <td class="num">{{ rung.rmse }}</td>
+                    <td class="num">{{ rung.mae }}</td>
+                    <td class="num">{{ rung.bias }}</td>
+                    <td class="num">{{ rung.corr }}</td>
+                    <td class="num">{{ rung.ets_64 }}</td>
+                    <td class="num">{{ rung.csi_64 }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <h2>2. Hypothesis Testing & Paired Differences (B4 vs Baselines)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Comparison</th>
+                    <th>Target Metric</th>
+                    <th class="num">Mean &Delta;</th>
+                    <th class="num">95% Bootstrap CI</th>
+                    <th class="num">p-value</th>
+                    <th>Significant</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for pair in paired_comparisons %}
+                <tr>
+                    <td><strong>{{ pair.comparison }}</strong></td>
+                    <td>{{ pair.metric }}</td>
+                    <td class="num">{{ pair.mean_diff }}</td>
+                    <td class="num">[{{ pair.ci_low }}, {{ pair.ci_high }}]</td>
+                    <td class="num">{{ pair.p_value }}</td>
+                    <td>
+                        <span class="status-badge {% if pair.significant %}status-pass{% else %}status-fail{% endif %}">
+                            {% if pair.significant %}YES (p &lt; 0.05){% else %}NO{% endif %}
+                        </span>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <h2>3. Scientific Controls & Integrity Audit</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Control Type</th>
+                    <th>Expected Behavior</th>
+                    <th>Observed Result</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for ctrl in controls %}
+                <tr>
+                    <td><strong>{{ ctrl.name }}</strong></td>
+                    <td>{{ ctrl.expected }}</td>
+                    <td>{{ ctrl.evidence }}</td>
+                    <td>
+                        <span class="status-badge {% if ctrl.passed %}status-pass{% else %}status-fail{% endif %}">
+                            {% if ctrl.passed %}PASS{% else %}FAIL{% endif %}
+                        </span>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <h2>4. Multiscale Fractions Skill Score (FSS)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Threshold</th>
+                    <th class="num">Scale 1 (Cell)</th>
+                    <th class="num">Scale 3 (~1.5&deg;)</th>
+                    <th class="num">Scale 5 (~2.5&deg;)</th>
+                    <th class="num">Scale 9 (~4.5&deg;)</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for fss_row in fss_table %}
+                <tr>
+                    <td><strong>{{ fss_row.threshold }}</strong></td>
+                    <td class="num">{{ fss_row.scale_1 }}</td>
+                    <td class="num">{{ fss_row.scale_3 }}</td>
+                    <td class="num">{{ fss_row.scale_5 }}</td>
+                    <td class="num">{{ fss_row.scale_9 }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <div class="honesty-box">
+            <strong>Honesty & Provenance Statement:</strong>
+            <p style="margin: 4px 0 0 0;">{{ provenance_statement }} All statistics presented in this report were generated automatically from run artifacts in accordance with Section 2 (N1/N2/N5). No numbers were manually typed or hard-coded.</p>
+        </div>
+    </div>
+</body>
+</html>
