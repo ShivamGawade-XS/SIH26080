@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  varsha:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: varsha-mvp
+    ports:
+      - "8000:8000"
+    environment:
+      - DATA_MODE=synthetic
+      - PORT=8000
+      - HOST=0.0.0.0
+    volumes:
+      - ./products:/app/products
+    restart: unless-stopped

@@ -1,0 +1,57 @@
+name: Varsha CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: web/package-lock.json
+
+      - name: Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Run Ruff Lint
+        run: ruff check src/ tests/
+
+      - name: Run Mypy Typecheck
+        run: mypy src/varsha/
+
+      - name: Execute Fast Demo Pipeline (demo-fast)
+        run: |
+          python -m varsha.cli data synth --profile demo-fast
+          python -m varsha.cli label --config configs/regimes.yaml --profile demo-fast
+          python -m varsha.cli train --config configs/models.yaml --profile demo-fast
+          python -m varsha.cli run --profile demo-fast
+          python -m varsha.cli verify --profile demo-fast
+
+      - name: Run Pytest Suite (Unit, Property, Controls, API)
+        run: pytest tests/ --cov=src/varsha --cov-report=xml
+
+      - name: Install Frontend Dependencies & Build Web
+        run: |
+          cd web
+          npm install
+          npm run build
+          npm test
