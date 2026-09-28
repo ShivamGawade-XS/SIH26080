@@ -30,8 +30,9 @@
 ## 2. Architecture Decision Records (ADRs)
 
 Detailed ADR documents are recorded under `docs/adr/`:
-- **ADR 001:** [Cell-Centre District Spatial Aggregation](file:///c:/Users/ASHWITH/Desktop/SIH26080/SIH26080/docs/adr/001-cell-centre-district-aggregation.md)
-- **ADR 002:** [LightGBM Hurdle Model Formulation for B4](file:///c:/Users/ASHWITH/Desktop/SIH26080/SIH26080/docs/adr/002-lightgbm-hurdle-for-b4.md)
-- **ADR 003:** [Static-First Product Bundle Architecture](file:///c:/Users/ASHWITH/Desktop/SIH26080/SIH26080/docs/adr/003-static-product-bundle-architecture.md)
-- **ADR 004:** [Offline MapLibre Vector Cartography Without CDN Tiles](file:///c:/Users/ASHWITH/Desktop/SIH26080/SIH26080/docs/adr/004-offline-maplibre-vector-rendering.md)
-- **ADR 005:** [Synthetic World Generator for Deterministic Ground-Truth CI](file:///c:/Users/ASHWITH/Desktop/SIH26080/SIH26080/docs/adr/005-synthetic-world-for-reproducible-ci.md)
+- **ADR 001:** [Cell-Centre District Spatial Aggregation](adr/ADR-001-immutable-product-bundles.md)
+- **ADR 002:** [LightGBM Hurdle Model Formulation for B4](adr/ADR-002-two-stage-regime-aware-correction.md)
+- **ADR 003:** [Static-First Product Bundle Architecture](adr/ADR-003-scientific-controls-and-leakage-canaries.md)
+- **ADR 004:** [Offline MapLibre Vector Cartography Without CDN Tiles](adr/ADR-004-offline-first-cartography-and-zero-tileserver.md)
+- **ADR 005:** [Synthetic World Generator for Deterministic Ground-Truth CI](PRD.md)
+

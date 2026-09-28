@@ -21,16 +21,17 @@
 
 | Tool / Runtime | Installed | Version / Details | Path |
 |---|---|---|---|
-| **Python** | Yes | 3.14.3 (active default) / 3.13 auxiliary | `C:\Users\ASHWITH\AppData\Local\Python\pythoncore-3.14-64\python.exe` |
-| **uv** | Yes | `0.12.14` | `C:\Users\ASHWITH\AppData\Local\Programs\Python\Python313\Scripts\uv.EXE` |
-| **pip** | Yes | `26.2.1` | `C:\Users\ASHWITH\AppData\Local\Programs\Python\Python313\Scripts\pip.EXE` |
-| **Node.js** | Yes | `v25.1.0` | `C:\Program Files\nodejs\node.EXE` |
-| **npm** | Yes | `11.17.0` | `C:\Users\ASHWITH\AppData\Roaming\npm\npm.CMD` |
-| **pnpm** | Yes | `11.24.0` | `C:\Users\ASHWITH\AppData\Roaming\npm\pnpm.CMD` |
-| **git** | Yes | `2.51.2.windows.1` | `C:\Program Files\Git\cmd\git.EXE` |
-| **GitHub CLI (gh)**| Yes | `2.98.0` | `C:\Program Files\GitHub CLI\gh.EXE` |
+| **Python** | Yes | 3.14.3 (active default) / 3.13 auxiliary | `python.exe` |
+| **uv** | Yes | `0.12.14` | `uv.exe` |
+| **pip** | Yes | `26.2.1` | `pip.exe` |
+| **Node.js** | Yes | `v25.1.0` | `node.exe` |
+| **npm** | Yes | `11.17.0` | `npm.cmd` |
+| **pnpm** | Yes | `11.24.0` | `pnpm.cmd` |
+| **git** | Yes | `2.51.2.windows.1` | `git.exe` |
+| **GitHub CLI (gh)**| Yes | `2.98.0` | `gh.exe` |
 | **Docker** | No | Not found in system PATH | N/A |
-| **Playwright** | Yes | `1.60.0` (Python/Node capable) | `C:\Users\ASHWITH\AppData\Local\Programs\Python\Python313\Scripts\playwright.EXE` |
+| **Playwright** | Yes | `1.60.0` (Python/Node capable) | `playwright.exe` |
+
 
 ---
 
